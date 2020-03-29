@@ -14,12 +14,13 @@ public class CountryApi {
     private String continent;
     private Integer population;
     private Integer lifeExpectancy;
-    private List<String> countryLanguage;
+    private String countryLanguage;
 
     public CountryApi() {
     }
 
-    public CountryApi(String name, String continent, Integer population, Integer lifeExpectancy, List<String> countryLanguage) {
+    public CountryApi(String name, String continent, Integer population, Integer lifeExpectancy,
+                      String countryLanguage) {
         this.name = name;
         this.continent = continent;
         this.population = population;
@@ -59,11 +60,11 @@ public class CountryApi {
         this.lifeExpectancy = lifeExpectancy;
     }
 
-    public List<String> getCountryLanguage() {
+    public String getCountryLanguage() {
         return countryLanguage;
     }
 
-    public void setCountryLanguage(List<String> countryLanguage) {
+    public void setCountryLanguage(String countryLanguage) {
         this.countryLanguage = countryLanguage;
     }
 }
